@@ -11,21 +11,8 @@ const gameSchema = new mongoose.Schema(
             type: Number,
             default: 0
         },        
-        cards: {
-            type: [{        
-              url: {        
-                type: String,        
-                required: true        
-              },        
-              value: {        
-                type: Number,        
-                required: true        
-              },        
-              cleared: {        
-                type:  Boolean,       
-                default: false        
-              }        
-            }],        
+        dificult: {
+            type: String, 
             required: true       
           }    
     }
